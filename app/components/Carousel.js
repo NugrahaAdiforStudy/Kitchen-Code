@@ -9,20 +9,22 @@ import Image from 'next/image';
 
 const HeroCarousel = () => {
   return (
-    <div className="w-[700px] ml-9 mt-4">
+    <div className="w-full max-w-[700px] mx-auto px-4 mt-4 ml-2">
       <Swiper
-        effect={'cards'}
+        effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        className="h-[300px] w-[500px]"
+        className="w-full aspect-video" // rasio 16:9 agar fleksibel
       >
         {[1, 2, 3].map((index) => (
-          <SwiperSlide key={index} className="rounded-xl overflow-hidden shadow-lg">
+          <SwiperSlide
+            key={index}
+            className="rounded-xl overflow-hidden shadow-lg"
+          >
             <Image
-              src={`/img/slide-${index}.png`} // ganti sesuai nama file kamu
+              src={`/img/slide-${index}.png`}
               alt={`Slide ${index}`}
-              width={500}
-              height={300}
+              fill
               className="object-cover"
             />
           </SwiperSlide>

@@ -1,49 +1,115 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+
+const CenteredIframe = ({ src, height = "h-[600px]" }) => (
+  <div className="flex justify-center w-full my-7">
+    <div className={`w-full max-w-4xl ${height}`}>
+      <iframe
+        src={src}
+        allowFullScreen
+        className="w-full h-full rounded-md border"
+      />
+    </div>
+  </div>
+);
 
 const data = [
-  { title: 'Pre-Test',
+  {
+    title: "Pre-Test",
     content: (
       <div>
         <p>Link ke Google Form atau quiz pre-test</p>
-        <button 
-          onClick={() => window.open("https://forms.gle/Xpkb33w9SA2oDhkK9", "_blank")}
+        <button
+          onClick={() =>
+            window.open("https://forms.gle/Xpkb33w9SA2oDhkK9", "_blank")
+          }
           className="w-[170px] text-center text-xs px-3 py-2 rounded-md transition bg-orange-200 hover:bg-orange-400 mt-6"
         >
           Kerjakan Pada Link Berikut!
         </button>
       </div>
-    )
+    ),
   },
-  { title: 'Review Konsep Dasar Pemrograman', content: <p>Penjelasan konsep dasar seperti variabel, tipe data, operator...</p> },
-  { title: 'Konsep Dasar Percabangan', content: <p>Penjelasan tentang if, else, dan percabangan bersarang...</p> },
-  { title: 'Percabangan dalam Kehidupan Sehari-hari', content: <p>Contoh percabangan di kehidupan nyata...</p> },
-  { title: 'Game Level 1 | Kitchen Code', 
+  {
+    title: "Review Konsep Dasar Pemrograman",
     content: (
-      <div className="aspect-video w-full">
-        <iframe
-          src="https://play.unity.com/en/games/c371e6b4-0822-49e1-902b-f6ac6a85fb1a/kitchen-code-level-1"
-          title="Game Level 1"
-          allowFullScreen
-          className="w-full h-[500px] rounded-md border"
-        />
+      <div className="flex flex-col items-center w-full gap-1">
+        <p className="mt-3">
+          Penjelasan tentang Konsep Dasar Pemrograman untuk Memulai lebih jauh
+        </p>
+        <div className="w-full max-w-4xl aspect-video">
+          <CenteredIframe src="https://docs.google.com/presentation/d/e/2PACX-1vR4Uqy62PQyfP0yMndKwDi414EnItLQ-lwogwGQMxwFOAQAbqfdTLtXcA1lwucX4Q/embed?start=false&loop=false" />
+        </div>
       </div>
     ),
   },
-  { title: 'Notasi Pseudocode pada Percabangan', content: <p>Penjelasan pseudocode dengan struktur if-else</p> },
-  { title: 'Game Level 2 | Kitchen Code', 
-    content: (      
-    <div className="aspect-video w-full">
-      <iframe
-        src="https://play.unity.com/en/games/7b14e4eb-9b63-4fd7-ac6b-b3829bb96a0b/kitchen-code-serious-game"
-        title="Game Level 2"
-        allowFullScreen
-        className="w-full h-[500px] rounded-md border"
-      />
-    </div>), },
-  { title: 'Post-Test', content: <p>Link ke Google Form atau quiz post-test</p> },
-  { title: 'Sertifikat', content: <p>Instruksi untuk unduh sertifikat setelah menyelesaikan semua materi.</p> },
+  {
+    title: "Konsep Dasar Percabangan",
+    content: (
+      <div className="flex flex-col items-center w-full gap-1">
+        <p className="mt-3">
+          Penjelasan tentang if, else, dan percabangan bersarang...
+        </p>
+        <div className="w-full max-w-4xl aspect-video">
+          <CenteredIframe src="https://docs.google.com/presentation/d/e/2PACX-1vTBRFmqHvyuxNBjzjjO21uTL8TFJjMe6CU82Ov2B0N7hExhkgW5GUEi59iDkVJe4w/embed?start=false&loop=false&delayms=3000" />
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "Game Level 1 | Kitchen Code",
+    content: (
+      <div className="aspect-video w-full">
+        <CenteredIframe src="https://play.unity.com/en/games/c371e6b4-0822-49e1-902b-f6ac6a85fb1a/kitchen-code-level-1"></CenteredIframe>
+      </div>
+    ),
+  },
+  {
+    title: "Notasi Pseudocode pada Percabangan",
+    content: (
+      <div className="flex flex-col items-center w-full gap-1">
+        <p className="mt-3">
+          Penggunaan Notasi Pseudocode dalam Percabangan yang perlu diperhatikan
+        </p>
+        <div className="w-full max-w-4xl aspect-video">
+          <CenteredIframe src="https://docs.google.com/presentation/d/e/2PACX-1vRy3VGDq8oht1_9wlz3_a-KYUpFvEgK2fn1guxpmTUsdjz9qRWf5iTikbiujwiZVg/embed?start=false&loop=false&delayms=3000" />
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "Game Level 2 | Kitchen Code",
+    content: (
+      <div className="aspect-video w-full">
+        <CenteredIframe src="https://play.unity.com/en/games/7b14e4eb-9b63-4fd7-ac6b-b3829bb96a0b/kitchen-code-serious-game"></CenteredIframe>
+      </div>
+    ),
+  },
+  {
+    title: "Post-Test",
+    content: (
+      <div>
+        <p>Link ke Google Form atau quiz post-test</p>
+        <button
+          onClick={() =>
+            window.open("https://forms.gle/rwLUbDmaMTQC42BN9", "_blank")
+          }
+          className="w-[170px] text-center text-xs px-3 py-2 rounded-md transition bg-orange-200 hover:bg-orange-400 mt-6"
+        >
+          Kerjakan Pada Link Berikut!
+        </button>
+      </div>
+    ),
+  },
+  {
+    title: "Sertifikat",
+    content: (
+      <p>
+        Instruksi untuk unduh sertifikat setelah menyelesaikan semua materi.
+      </p>
+    ),
+  },
 ];
 
 export default function AccordionValidasi() {
@@ -51,7 +117,7 @@ export default function AccordionValidasi() {
   const [progress, setProgress] = useState([]);
 
   useEffect(() => {
-    const stored = JSON.parse(localStorage.getItem('accordion-progress'));
+    const stored = JSON.parse(localStorage.getItem("accordion-progress"));
     if (stored && stored.length === data.length) {
       setProgress(stored);
     } else {
@@ -60,7 +126,7 @@ export default function AccordionValidasi() {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('accordion-progress', JSON.stringify(progress));
+    localStorage.setItem("accordion-progress", JSON.stringify(progress));
   }, [progress]);
 
   const toggleAccordion = (index) => {
@@ -92,7 +158,7 @@ export default function AccordionValidasi() {
               const reset = data.map((_, i) => i === 0);
               setProgress(reset);
               setActiveIndex(null);
-              localStorage.setItem('accordion-progress', JSON.stringify(reset));
+              localStorage.setItem("accordion-progress", JSON.stringify(reset));
             }}
             className="text-red-500 hover:underline text-sm"
           >
@@ -115,8 +181,8 @@ export default function AccordionValidasi() {
             className={`w-full text-left px-4 py-2 rounded-md transition 
               ${
                 progress[index]
-                  ? 'bg-sky-100 hover:bg-sky-300'
-                  : 'bg-gray-200 cursor-not-allowed' 
+                  ? "bg-sky-300 hover:bg-sky-600"
+                  : "bg-gray-200 cursor-not-allowed"
               }
             `}
           >
@@ -130,15 +196,15 @@ export default function AccordionValidasi() {
             </div>
           </button>
 
-
           {activeIndex === index && (
             <div className="relative p-4 border border-sky-300 rounded-b-md bg-white">
               {/* Tombol di pojok kanan atas */}
               {!progress[index + 1] && index + 1 < data.length && (
                 <div className="flex justify-end mt-4">
-                  <button 
+                  <button
                     className="text-xs px-2 py-1  border border-gray-800 text-grey rounded hover:bg-green-600"
-                    onClick={() => markAsDone(index)}>
+                    onClick={() => markAsDone(index)}
+                  >
                     Tandai Selesai
                   </button>
                 </div>

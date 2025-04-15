@@ -27,19 +27,19 @@ export default function CertificatePage() {
         className="mb-4 p-2 border border-orange-400 border-2 rounded w-72"
       />
 
-      <div
-        ref={certificateRef}
-        className="relative w-full max-w-[1280px] aspect-[16/10] bg-white"
-        style={{
-          backgroundImage: "url(/img/template-sertifikat.png)",
-          backgroundSize: "cover",
-          fontFamily: "'Poppins', sans-serif",
-        }}
-      >
-        <div className="absolute top-[420px] w-full text-center">
-          <h2 className="text-[48px] font-bold text-black">{name}</h2>
-        </div>
-      </div>
+    <div
+      ref={certificateRef}
+      className="relative w-full max-w-[1280px] aspect-[16/10] bg-white flex flex-col items-center justify-start pt-[380px]"
+      style={{
+        backgroundImage: "url(/img/template-sertifikat.png)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        fontFamily: "'Poppins', sans-serif",
+      }}
+    >
+      <h2 className="text-[48px] font-bold text-black">{name}</h2>
+    </div>
+
 
       <button
         onClick={handleDownload}

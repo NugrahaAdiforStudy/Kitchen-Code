@@ -41,7 +41,7 @@ export default function AccordionValidasi() {
           </p>
           <button
             onClick={() =>
-              window.open("https://forms.gle/Xpkb33w9SA2oDhkK9", "_blank")
+              window.open("https://forms.gle/81vY3BG8NQyDsWUv7", "_blank")
             }
             className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm"
           >
@@ -96,9 +96,17 @@ export default function AccordionValidasi() {
             adalah cara yang seru untuk memahami bagaimana algoritma bekerja
             dalam situasi nyata.
           </p>
-          <div className="aspect-video w-full">
+          <button
+            onClick={() =>
+              window.open("https://play.unity.com/en/games/c371e6b4-0822-49e1-902b-f6ac6a85fb1a/kitchen-code-level-1", "_blank")
+            }
+            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm"
+          >
+            Buka Game Pada Link Berikut!
+          </button>
+          {/* <div className="aspect-video w-full">
             <CenteredIframe src="https://play.unity.com/en/games/c371e6b4-0822-49e1-902b-f6ac6a85fb1a/kitchen-code-level-1"></CenteredIframe>
-          </div>
+          </div> */}
         </div>
       ),
     },
@@ -133,9 +141,18 @@ export default function AccordionValidasi() {
             nyata.
           </p>
 
-          <div className="aspect-video w-full">
+          <button
+            onClick={() =>
+              window.open("https://play.unity.com/en/games/7b14e4eb-9b63-4fd7-ac6b-b3829bb96a0b/kitchen-code-serious-game", "_blank")
+            }
+            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm"
+          >
+            Buka Game Pada Link Berikut!
+          </button>
+
+          {/* <div className="aspect-video w-full">
             <CenteredIframe src="https://play.unity.com/en/games/7b14e4eb-9b63-4fd7-ac6b-b3829bb96a0b/kitchen-code-serious-game"></CenteredIframe>
-          </div>
+          </div> */}
         </div>
       ),
     },
@@ -155,7 +172,7 @@ export default function AccordionValidasi() {
             onClick={() =>
               window.open("https://forms.gle/Bv1RevZ2cznPxqJt9", "_blank")
             }
-            className="w-[170px] text-center text-xs px-3 py-2 rounded-md transition bg-orange-200 hover:bg-orange-400 mt-6"
+           className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm"
           >
             Kerjakan Pada Link Berikut!
           </button>
@@ -175,7 +192,7 @@ export default function AccordionValidasi() {
           </p>
           <button
             onClick={() =>
-              window.open("https://forms.gle/rwLUbDmaMTQC42BN9", "_blank")
+              window.open("https://forms.gle/w4vQdoRpgwzX33PR9", "_blank")
             }
             className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm"
           >

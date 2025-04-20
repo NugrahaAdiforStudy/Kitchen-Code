@@ -97,20 +97,17 @@ export default function AccordionValidasi() {
             dalam situasi nyata.
           </p>
 
-        {/* Video Lokal */}
-        <div className="mt-4 aspect-video w-full max-w-2xl">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            controls
-            className="w-full h-full rounded-lg shadow"
-            preload="metadata"
-          >
-            <source src="/videos/Demo Game.mp4" type="video/mp4" />
-            Browser kamu tidak mendukung video.
-          </video>
+        {/* Video Demo Game */}
+        <div className="aspect-video w-full mt-4">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/2c2IP-RSUhE?autoplay=1&mute=1&rel=0"
+            title="YouTube video demo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="rounded-xl"
+          ></iframe>
         </div>
 
           <button
@@ -158,21 +155,17 @@ export default function AccordionValidasi() {
             nyata.
           </p>
 
-          
-        {/* Video Lokal */}
-        <div className="mt-4 aspect-video w-full max-w-2xl">
-        <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            controls
-            className="w-full h-full rounded-lg shadow"
-            preload="metadata"
-          >
-            <source src="/videos/Demo Game.mp4" type="video/mp4" />
-            Browser kamu tidak mendukung video.
-          </video>
+        {/* Video Demo Game */}
+        <div className="aspect-video w-full mt-4">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/2c2IP-RSUhE?autoplay=1&mute=1&rel=0"
+            title="YouTube video demo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="rounded-xl"
+          ></iframe>
         </div>
 
           <button

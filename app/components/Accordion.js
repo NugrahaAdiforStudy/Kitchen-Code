@@ -96,6 +96,23 @@ export default function AccordionValidasi() {
             adalah cara yang seru untuk memahami bagaimana algoritma bekerja
             dalam situasi nyata.
           </p>
+
+        {/* Video Lokal */}
+        <div className="mt-4 aspect-video w-full max-w-2xl">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            className="w-full h-full rounded-lg shadow"
+            preload="metadata"
+          >
+            <source src="/videos/Demo Game.mp4" type="video/mp4" />
+            Browser kamu tidak mendukung video.
+          </video>
+        </div>
+
           <button
             onClick={() =>
               window.open("https://play.unity.com/en/games/c371e6b4-0822-49e1-902b-f6ac6a85fb1a/kitchen-code-level-1", "_blank")
@@ -140,6 +157,23 @@ export default function AccordionValidasi() {
             semakin paham bagaimana logika percabangan digunakan dalam dunia
             nyata.
           </p>
+
+          
+        {/* Video Lokal */}
+        <div className="mt-4 aspect-video w-full max-w-2xl">
+        <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            className="w-full h-full rounded-lg shadow"
+            preload="metadata"
+          >
+            <source src="/videos/Demo Game.mp4" type="video/mp4" />
+            Browser kamu tidak mendukung video.
+          </video>
+        </div>
 
           <button
             onClick={() =>
